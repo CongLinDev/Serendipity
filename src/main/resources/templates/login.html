@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <div th:replace="templates::head"></div>
+
+    <body class="is-preload">
+        <div th:replace="templates::header"></div>
+        <div th:replace="templates::menu"></div>  
+        
+        <div class="div-block-2">           
+            <h1 class="heading">Find your Serendipity</h1>
+            <p class="paragraph">Log In</p>
+            <div class="form-block w-form">
+                <form id="email-form" name="email-form" data-name="Email Form" method="post" th:action="@{/account/login}"/>
+                    <input type="email" class="text-field w-input" maxlength="256"
+                    name="email" data-name="Email" placeholder="yourawesome@email.com" id="email" required="" />
+                    <br>
+                    <input type="password" class="text-field w-input" maxlength="30"
+                    name="password" data-name="Password" placeholder="yourpassword" id="password" required="" />
+                    
+                    <input type="submit" value="Sign Up" class="submit-button w-button" />
+                    <!--<input type="checkbox" name="remember-me" value="true"/>Remember me-->
+                </form>
+                <div class="success-message w-form-done"></div>
+                <div class="error-message w-form-fail">
+                    <div class="text-block-3">Oops! Something went wrong while submitting the form. Try again!</div>
+                </div>
+            </div>
+            <p class="paragraph">New here? <a href="/account/register">click it and get a new account</a>.</p>
+        </div>
+        <br>
+
+        <div th:replace="templates::footer"></div>
+        <div th:replace="templates::scripts"></div>
+    </body>
+</html>
+ 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>stack</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Pyrismic-Landing-Desktop" transform="translate(-69.000000, -1701.000000)" stroke="#5FF4EE" stroke-width="2.4">
+            <g id="Group-18" transform="translate(71.000000, 1450.000000)">
+                <g id="Group-21" transform="translate(0.000000, 252.000000)">
+                    <g id="Group-13">
+                        <g id="stack">
+                            <polyline id="Stroke" opacity="0.639999986" points="1.01323636 27.8859412 16.0008727 33.3318542 30.9870545 27.8859412"></polyline>
+                            <path d="M1.01323636,10.1916021 L16.0008727,15.591689 L30.9870545,10.1916021 C32.2932364,9.72003685 32.3499636,7.87960207 31.0757818,7.32821077 L16.0008727,0.809080331 L0.924509091,7.32821077 C-0.349672727,7.87960207 -0.292945455,9.72003685 1.01323636,10.1916021 Z" id="Stroke"></path>
+                            <polyline id="Stroke" opacity="0.800000012" points="1.01323636 19.0777238 16.0008727 24.4615499 30.9870545 19.0777238"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

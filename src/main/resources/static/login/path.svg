@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="268px" viewBox="0 0 1024 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#6E5CC6" stop-opacity="0.24" offset="0%"></stop>
+            <stop stop-color="#3B2F95" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pyrismic-Landing-Desktop" transform="translate(0.000000, -1197.000000)" fill="url(#linearGradient-1)">
+            <path d="M1159,1470 C773.502228,1470 579.059403,1349.31983 391.018866,1232.61813 C213.622133,1122.5472 46.0155657,1394.50616 -296,1394.50616 L-295.973324,1357.84262 C89.5244486,1357.84262 283.967274,1111.70137 472.00781,1228.40307 C649.404543,1338.474 817.01111,1433.16716 1159,1433.16716 L1159,1470 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
