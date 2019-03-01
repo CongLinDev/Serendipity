@@ -9,11 +9,10 @@
         <div th:replace="templates::menu"></div>
         <div class="app-container">
             <div class="main-container">
-                <br>
                 <h2 class="comments__title">Write your Serendipity now.</h2>
                 <div class="comments__bottom span14">
                     <form class="comments__reply span5 span14-mobile" method="post"
-                          th:action="@{/serendipper/{action}(action=${new_serendimsg_action})}">
+                          th:action="@{/serendimsg/{action}(action=${new_serendimsg_action})}">
                         <label class="custom-label relative" th:object="${serendimsg}">
                             <br>
                             <!-- id-->
@@ -43,6 +42,12 @@
                     <article class="case-single span14 margin-bottom-contextual">
                         <div class="page__transition"> <div class="case-single__details span5 span14-tablet span14-mobile">
                             <div class="case-single__details__top">
+                                <div class="case-single__details__top__share"><div class="social-share">
+                                    <button th:if="${#authentication.name eq current_serendimsg.getHost()}" class="social-share__button">
+                                        <a th:href="@{/serendimsg/delete/{id}(id=${current_serendimsg.getId()})}">Delete</a></button>
+                                </div></div>
+                            </div>
+
                             <div class="case-single__details__top__date span2 span4-tablet span4-tablet-plus span14-mobile pixel-pattern">
                                 <div class="pixel-text case-single__details__day">
                                     <span class="pixel-text__text"><td th:text="${current_serendimsg.getCreatedDateDay()}">24</td></span>
@@ -56,20 +61,12 @@
 
                         <div class="case-single__details__bottom hide-tablet hide-mobile">
                             <div class="case-single__details__content">
-                                <h3 class="case-single__details__title"><td th:text="${current_serendimsg.getCreatedBy()}">Serendipper</td></h3>
+                                <h3 class="case-single__details__title"><td th:text="${current_serendimsg.getHost()}">Serendipper</td></h3>
                                 <span class="case-single__details__type"><td th:utext="${current_serendimsg.getMessage()}">Find Your Serendipity</td></span>
                             </div>
                         </div>
                         </div>
 
-                        <!--<div class="case-single__details__bottom hide-tablet hide-mobile">-->
-                            <!--<div class="case-single__details__content">-->
-                                <!--&lt;!&ndash;<h3 class="case-single__details__title"><td th:text="${current_serendimsg.getHost()}">Serendipper</td></h3>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<span class="case-single__details__type"><td th:utext="${current_serendimsg.getMessage()}">Find Your Serendipity</td></span>&ndash;&gt;-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        </div>
                     </article>
                     </div>
                 </tr>

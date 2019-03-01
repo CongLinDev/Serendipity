@@ -1,7 +1,9 @@
 package conglin.serendipity.domain;
 
+import conglin.serendipity.service.SerendipperService;
+import conglin.serendipity.service.impl.SerendipperServiceImpl;
 import conglin.serendipity.util.DateUtil;
-import conglin.serendipity.util.SerendipperServiceProxy;
+import conglin.serendipity.util.SpringUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -38,8 +40,6 @@ public class Serendimsg{
         nullable = false,
         updatable = false
     )
-//    @ManyToOne
-//    @JoinColumn(name = "serendipper_id")
     private Long createdBy;
 
     //文本内容
@@ -73,7 +73,11 @@ public class Serendimsg{
     }
 
     public String getHost(){
-        return SerendipperServiceProxy.getSerendipperUsernameBySerendipperId(this.getCreatedBy());
+        SerendipperService serendipperService = SpringUtil.getBean(SerendipperServiceImpl.class);
+        Serendipper serendipper = serendipperService.findBySerendipperId(this.getCreatedBy());
+        if(serendipper != null)
+            return serendipper.getUsername();
+        return "Unknown";
     }
 
     @Override
