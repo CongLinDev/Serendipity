@@ -52,3 +52,17 @@ Security 使用Spring Security 控制。具体设置位于类  conglin.serendipi
 ```
 git clone git@github.com:CongLinDev/Serendipity.git
 ```
+
+## Preview
+
+### Index
+
+![index.png](https://i.loli.net/2019/03/09/5c836737097bc.png)
+
+### Login
+
+![login.png](https://i.loli.net/2019/03/09/5c83676d3ce0f.png)
+
+### HomePage
+
+![home.png](https://i.loli.net/2019/03/09/5c8367a8d963e.png)

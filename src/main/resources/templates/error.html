@@ -7,21 +7,19 @@
 <body class="is-preload">
     <div th:replace="templates::header"></div>
     <div th:replace="templates::menu"></div>
-    <div class="div-block-2">
-        <h1 class="heading" th:object="${statusCode}" th:text="${statusCode.toString()}">Error</h1>
-        <!--<p class="paragraph" th:object="${throwable}" th:utext="${throwable.printStackTrace()}">info</p>-->
-        <br><br><br>
-        <button type="submit" value="Post" class="form-submit comments__send" name="Post">
-            <svg class="svg-spinner form-submit__spinner svg-spinner--inactive" width="16px" height="16px" viewBox="0 0 66 66">
-                <circle class="svg-spinner__path-bg" stroke="transparent" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-                <circle class="svg-spinner__path" stroke="#dbdbdb" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-            </svg>
-            <a href="/serendipper">Go Home</a>
-        </button>
-        <br><br><br>
-    </div>
 
-    <br>
+    <main class="margin-top--xl margin-bottom--xl">
+        <div class="container container--xl">
+            <h1 class="text--center">Oops...Page not found.</h1>
+            <h3 class="text--center" th:text="${statusCode}"> Error Code</h3>
+            <div class="fof-animation">
+                <figure>
+                    <a href="/serendipper"><img src="/static/images/fof.gif" alt="404 animation" title="" style="" align="center"></a>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <br><br><br><br>
     <div th:replace="templates::footer"></div>
     <div th:replace="templates::scripts"></div>
 </body>
